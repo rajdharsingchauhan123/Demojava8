@@ -11,7 +11,7 @@ public class ArrayoutofboundExDemo {
             }
 
         }
-        catch (Exception e){
+        catch (ArrayIndexOutOfBoundsException e){
             System.out.println("\n exeption caught");
 
         }
