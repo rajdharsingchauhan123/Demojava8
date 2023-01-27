@@ -17,5 +17,7 @@ public class LambdaDemo {
         //using consumer
         Consumer<Integer>method=(n)-> System.out.println(n);
         arrayList.forEach(method);
+
+
     }
 }
