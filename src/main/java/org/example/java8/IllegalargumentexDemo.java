@@ -12,7 +12,7 @@ public class IllegalargumentexDemo {
                 try {
                     // Try to make the thread sleep for -10
                     // milliseconds
-                    Thread.sleep(-10);
+                    Thread.sleep(10);
                 }
                 catch (InterruptedException e) {
                     e.printStackTrace();
