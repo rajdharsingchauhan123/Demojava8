@@ -1,9 +1,25 @@
 package org.example.java8;
 
 public class Exeptioninintializerdemo {
-   static int i=12/0;
+
+
+        static {
+            try {
+                 int i=12/0;
+
+
+            }
+            catch (Exception e){
+                System.out.println("caught exption erreo");
+            }
+
+        }
+
+
+
+
     public static void main(String[] args) {
-        System.out.println(i);
+        System.out.println();
 
 
     }
