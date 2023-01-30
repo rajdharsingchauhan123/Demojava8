@@ -13,7 +13,10 @@ public class MapstreamDemo {
 //        map.entrySet().stream().sorted(Map.Entry.comparingByKey(Comparator.reverseOrder()))
 //                .forEach(System.out::println);
         // comparing by value
-        map.entrySet().stream().sorted(Map.Entry.comparingByValue()).forEach(System.out::println);
+      //  map.entrySet().stream().sorted(Map.Entry.comparingByValue()).forEach(System.out::println);
+
+        // reverse order
+        map.entrySet().stream().sorted(Map.Entry.comparingByValue(Comparator.reverseOrder())).forEach(System.out::println);
 
 
     }
