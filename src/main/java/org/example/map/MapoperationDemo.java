@@ -29,5 +29,11 @@ public class MapoperationDemo {
         System.out.println(hm1);
         System.out.println(hm2);
 
+        // get elemetn in map
+        System.out.println(hm1.get(1));
+        g
+        // remove element in map
+        System.out.println(hm1.remove(4));
+
     }
 }
