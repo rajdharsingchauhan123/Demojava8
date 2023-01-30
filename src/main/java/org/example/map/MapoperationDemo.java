@@ -31,7 +31,7 @@ public class MapoperationDemo {
 
         // get elemetn in map
         System.out.println(hm1.get(1));
-        g
+
         // remove element in map
         System.out.println(hm1.remove(4));
 
