@@ -6,14 +6,16 @@ import java.util.TreeMap;
 
 public class TreemapDemoCustomComparator {
     public static void main(String[] args) {
+        // TreeMap with keys sorted by ignoring case
+        SortedMap<String, String> fileExtensions = new TreeMap<>(String.CASE_INSENSITIVE_ORDER);
 
 
-        SortedMap<String,String>fileExtensions=new TreeMap<>(new Comparator<String>() {
-            @Override
-            public int compare(String s, String s1) {
-             return s.compareTo(s1);
-            }
-        });
+//        SortedMap<String,String>fileExtensions=new TreeMap<>(new Comparator<String>() {
+//            @Override
+//            public int compare(String s, String s1) {
+//             return s.compareTo(s1);
+//            }
+//        });
         fileExtensions.put("python", ".py");
         fileExtensions.put("c++", ".cpp");
         fileExtensions.put("kotlin", ".kt");
