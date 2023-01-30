@@ -10,7 +10,11 @@ public class MapstreamDemo {
         map.put(100,"Amit");
         map.put(101,"Vijay");
         map.put(102,"Rahul");
-        map.entrySet().stream().sorted(Map.Entry.comparingByKey(Comparator.reverseOrder()))
-                .forEach(System.out::println);
+//        map.entrySet().stream().sorted(Map.Entry.comparingByKey(Comparator.reverseOrder()))
+//                .forEach(System.out::println);
+        // comparing by value
+        map.entrySet().stream().sorted(Map.Entry.comparingByValue()).forEach(System.out::println);
+
+
     }
 }
